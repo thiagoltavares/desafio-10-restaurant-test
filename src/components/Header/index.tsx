@@ -12,13 +12,13 @@ interface IHeaderProps {
 const Header: React.FC<IHeaderProps> = ({ openModal }) => (
   <Container>
     <header>
-      <img src={Logo} alt="GoRestaurant" />
+      <img src={Logo} alt="GoRestaurant" className="food" />
       <nav>
         <div>
           <button
             type="button"
             onClick={() => {
-              /* TODO OPEN MODAL */
+              openModal();
             }}
           >
             <div className="text">Novo Prato</div>
